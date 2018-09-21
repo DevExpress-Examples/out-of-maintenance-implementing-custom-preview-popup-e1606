@@ -25,8 +25,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using DevExpress.Web.ASPxHtmlEditor;
 using DevExpress.Web.ASPxHtmlEditor.Localization;
-using DevExpress.Web.ASPxClasses;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 
 public partial class InsertImageForm : HtmlEditorUserControl {
 
@@ -76,7 +75,7 @@ public partial class InsertImageForm : HtmlEditorUserControl {
         }
         return Path.GetFileName(fileName);
     }
-    protected void uplImage_FileUploadComplete(object sender, DevExpress.Web.ASPxUploadControl.FileUploadCompleteEventArgs args) {
+    protected void uplImage_FileUploadComplete(object sender, DevExpress.Web.FileUploadCompleteEventArgs args) {
         try {
             args.CallbackData = SaveUploadFile();
         } catch (Exception e) {

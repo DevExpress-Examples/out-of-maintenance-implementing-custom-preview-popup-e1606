@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using DevExpress.Web.ASPxSpellChecker;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 using DevExpress.Web.ASPxSpellChecker.Localization;
 
 public partial class SpellCheckForm : SpellCheckerUserControl {
