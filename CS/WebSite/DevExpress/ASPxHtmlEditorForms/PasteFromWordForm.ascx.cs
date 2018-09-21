@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using DevExpress.Web.ASPxHtmlEditor;
 using DevExpress.Web.ASPxHtmlEditor.Localization;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 
 public partial class PasteFromWordForm : HtmlEditorUserControl {
 	protected void Page_Load(object sender, EventArgs e) {
